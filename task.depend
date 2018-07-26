@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1528312997 source:d:\cplusplus\0\task\main.cpp
+	<fstream>
+	<iostream>
+	<string>
+	<cstdlib>
+
