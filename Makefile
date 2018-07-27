@@ -1,6 +1,13 @@
-CC=g++
-CFLAGS=-I.
+run: all
+	./bkf
 
-all: main.cpp
-	$(CC) main.cpp -o main.o
-	$(CC) main.cpp -o main main.o
+all: bkf
+
+bkf: main.o
+	gcc main.o -o bkf
+
+main.o: main.c
+	gcc -Wall -c main.c
+
+clean:
+	rm -rf *.o
