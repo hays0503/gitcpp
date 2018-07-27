@@ -1,13 +1,7 @@
-run: all
-	./bkf
 
-all: bkf
-
-bkf: main.o
-	g++ main.o -o bkf
-
-main.o: main.c
+all:
 	g++ -Wall -c main.cpp
+	g++ main.o -o main
 
 clean:
 	rm -rf *.o
